@@ -1,3 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+  const newTask = document.querySelector(`#create-task-form`)
+
+  newTask.addEventListener("submit", createNewTask)
 });
+
+const createNewTask = event => {
+  event.preventDefault()
+}
